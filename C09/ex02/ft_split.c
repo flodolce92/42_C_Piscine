@@ -6,7 +6,7 @@
 /*   By: flo-dolc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 09:07:21 by flo-dolc          #+#    #+#             */
-/*   Updated: 2023/10/10 09:13:22 by flo-dolc         ###   ########.fr       */
+/*   Updated: 2023/12/12 00:22:58 by flo-dolc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,6 @@ void	fill_split(char **split, char *str, char *charset)
 {
 	int	word;
 	int	i;
-	int	j;
 	int	len;
 
 	word = 0;
@@ -74,7 +73,6 @@ void	fill_split(char **split, char *str, char *charset)
 			i++;
 		else
 		{
-			j = 0;
 			len = 1;
 			while (is_inset(str[i + len], charset) == 0)
 				len++;
